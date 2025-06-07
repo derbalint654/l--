@@ -47,7 +47,7 @@ body {
 .custom-hr {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
-  height: 700px;
+  height: 400px;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -263,7 +263,7 @@ a:hover {
   }
 
   .custom-hr {
-    height: 300px;
+    height: 400px;
   }
 
   .mini-hr2 {
