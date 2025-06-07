@@ -12,16 +12,28 @@
 
     
 
-  <div class="navbar">
-    <a href="#" ><img src="images/logo.jpg" id="logo"></a>
-    <a href="index.html" class="logo">Villanyszerelés</a>
-    <a href="index.html" >Villanyszerelés</a>
+<div class="navbar">
+  <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+  <div class="logo-container">
+    <a href="#"><img src="images/logo.jpg" id="logo"></a>
+    <span class="logo-text">Villanyszerelés</span>
+  </div>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Villanyszerelés</a>
     <a href="index.html#szolgaltatasok">Szolgáltatások</a>
     <a href="rolam.html">Rólam</a>
     <a href="v.projektek.html">Projektek</a>
     <a href="arak.html">Árak</a>
     <a href="kapcsolat.html">Kapcsolat</a>
   </div>
+</div>
+
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById("navLinks");
+    nav.classList.toggle("active");
+  }
+</script>
 
 <img src="images/villanyszerelo.png" class="villany">
   
