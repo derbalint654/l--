@@ -224,16 +224,20 @@ padding-top: 120px;
   cursor: pointer;
   padding: 14px;
 }
-/* Mobilnézet: max 600px szélességig */
 @media screen and (max-width: 600px) {
-
-  .menu-toggle {
-    display: block; /* Mobilon jelenjen meg */
-  }
-
   .navbar {
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+    position: relative;
+    z-index: 1100;
   }
 
   .nav-links {
@@ -259,22 +263,11 @@ padding-top: 120px;
   .nav-links.active {
     left: 0;
   }
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 10px; /* Kis távolság a kép és a szöveg között */
-  margin-right: auto; /* Balra igazítás */
-}
 
-.logo-text {
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  white-space: nowrap;
-}
-.szoveg2 {
+  .szoveg2 {
     left: 50px;
   }
+
   .mini-hr {
     transform: translate(20px, 70px);
     width: 350px;
@@ -286,16 +279,15 @@ padding-top: 120px;
   }
 
   .custom-hr {
-    height: 400px;
+    height: 1000px;
   }
 
   .mini-hr2 {
-    transform: translate(-20px, 50px);
+    transform: translate(-20px, -400px);
     width: 350px;
   }
 
   .vissza-link {
-    left: -50px;
+    left: -20px;
   }
-
 }
