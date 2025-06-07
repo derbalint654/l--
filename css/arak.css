@@ -1,4 +1,3 @@
-/* Alap (asztali nézet) stílusok */
 body {
   margin: 0;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -71,7 +70,8 @@ body {
   color: rgb(0, 0, 0);
 }
 
-.mini-hr, .mini-hr2 {
+.mini-hr,
+.mini-hr2 {
   width: 1250px;
   height: 2px;
   background-color: #a7a9b0;
@@ -200,49 +200,34 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Mobilnézet: max 600px szélességig */
-@media screen and (max-width: 600px) {
-.navbar {
-  background-color: #010b44;
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-  font-weight: 900;
-  position: relative;
+/* Hamburger ikon – ALAPBÓL NEM LÁTSZIK csak mobilon */
+.menu-toggle {
+  display: none;
 }
 
-/* Menü ikon - csak mobilon látszik */
-.menu-toggle {
-  font-size: 28px;
-  color: white;
-  cursor: pointer;
-  display: none; /* alapból elrejtve desktopon */
-  margin-right: 20px;
-}
-
-/* Menü linkek (desktop nézetben) */
-.nav-links {
-  display: flex;
-  gap: 20px;
-}
-.menu-toggle {
-  font-size: 28px;
-  color: white;
-  cursor: pointer;
-  display: none; /* alapból elrejtve */
-  margin-right: 20px;
-  position: relative;
-  z-index: 1100; /* fontos: magasabb, mint a menü (ami 1000) */
-}
-/* Menü linkek mobilon */
+/* ============================== */
+/* MOBILNÉZET (max. 600px szélesség) */
+/* ============================== */
 @media screen and (max-width: 600px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   .menu-toggle {
     display: block;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+    position: relative;
+    z-index: 1100;
   }
+
   .nav-links {
     position: fixed;
     top: 0;
-    left: -100%; /* el van tolva alapból */
+    left: -100%;
     width: 200px;
     height: 100%;
     background-color: #010b44;
@@ -256,50 +241,37 @@ a:hover {
     color: white;
     padding: 15px 20px;
     border-bottom: 1px solid #fff;
+    display: block;
   }
 
   .nav-links.active {
-    left: 0; /* becsúsztatjuk */
+    left: 0;
   }
-  .szoveg2 {
-  position: absolute;
-  top: -10px;
-  left: 50px;
-  font-size: 35px;
-  font-weight: 200;
-  color: rgb(0, 0, 0);
-}
-.mini-hr {
-  transform: translate(20px, 70px);
-  width: 350px;
-}
-.szoveg3 {
-  padding-left: 35px;
-  padding-top: 120px;
-}
-.custom-hr {
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  height: 1200px;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0;
-  position: relative;
-  top: -280px;
-}
-.mini-hr2 {
-  transform: translate(-10px, 50px);
-  width: 350px;
-}
-.vissza-link {
-  position: relative;
-  text-align: center;
-  top: 65px;
-  left: -20px;
-  z-index: 2;
-}
 
-}
-  
+  .szoveg2 {
+    left: 50px;
+  }
+
+  .mini-hr {
+    transform: translate(20px, 70px);
+    width: 350px;
+  }
+
+  .szoveg3 {
+    padding-left: 35px;
+    padding-top: 120px;
+  }
+
+  .custom-hr {
+    height: 1200px;
+  }
+
+  .mini-hr2 {
+    transform: translate(-10px, 50px);
+    width: 350px;
+  }
+
+  .vissza-link {
+    left: -20px;
+  }
 }
