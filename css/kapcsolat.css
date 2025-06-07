@@ -6,55 +6,44 @@ body {
   }
 
   .navbar {
-    background-color: #010b44;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    font-weight: 900;
-  }
+  background-color: #010b44;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-weight: 900;
+}
 
-  .navbar .logo {
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    margin-right: auto;
-  }
+.navbar .logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: auto;
+}
 
-  .navbar a {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
-  }
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
 
-  .navbar a:hover {
-      background-color: #fbff00;
-      color: #003769;
-  }
+.navbar a:hover {
+  background-color: #fbff00;
+  color: #003769;
+}
 
-  @media screen and (max-width: 600px) {
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+#logo {
+  height: auto;
+  width: 40px;
+  align-items: center;
+}
 
-    .navbar a {
-      width: 100%;
-      text-align: left;
-    }
-  }
-  #logo {
-      height: auto;
-      width: 40px;
-     align-items: center;
-  }
-  .villany {
-      width: 100%;
-      height: 500px;
-  }
-
+.villany {
+  width: 100%;
+  height: 500px;
+}
 
 
 .custom-hr {
@@ -196,4 +185,88 @@ padding-top: 120px;
 .vissza-link a:hover {
   color: #333; 
   text-decoration: none;
+}
+.menu-toggle {
+  display: none; /* Alapból rejtve minden eszközön */
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  margin-right: 20px;
+  position: relative;
+  z-index: 1100;
+}
+
+/* Mobilnézet: max 600px szélességig */
+@media screen and (max-width: 600px) {
+  .menu-toggle {
+    display: block; /* Csak mobilon legyen látható */
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 200px;
+    height: 100%;
+    background-color: #010b44;
+    flex-direction: column;
+    padding-top: 60px;
+    transition: 0.3s ease;
+    z-index: 1000;
+  }
+
+  .nav-links a {
+    color: white;
+    padding: 15px 20px;
+    border-bottom: 1px solid #fff;
+    display: block;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Kis távolság a kép és a szöveg között */
+  margin-right: auto; /* Balra igazítás */
+}
+
+.logo-text {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.szoveg2 {
+    left: 50px;
+  }
+  .mini-hr {
+    transform: translate(20px, 70px);
+    width: 350px;
+  }
+
+  .szoveg3 {
+    padding-left: 35px;
+    padding-top: 120px;
+  }
+
+  .custom-hr {
+    height: 400px;
+  }
+
+  .mini-hr2 {
+    transform: translate(-20px, 50px);
+    width: 350px;
+  }
+
+  .vissza-link {
+    left: -50px;
+  }
+
 }
