@@ -13,52 +13,45 @@
 
       }
 
-    .navbar {
-      background-color: #010b44;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      padding: 0 20px;
-      font-weight: 900;
-      
-    }
+ .navbar {
+  background-color: #010b44;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-weight: 900;
+}
 
-    .navbar .logo {
-      color: white;
-      font-size: 24px;
-      font-weight: bold;
-      text-decoration: none;
-      margin-right: auto;
-    }
+.navbar .logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: auto;
+}
 
-    .navbar a {
-      color: white;
-      padding: 14px 20px;
-      text-decoration: none;
-      text-align: center
-    }
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
 
-    .navbar a:hover {
-      background-color: #fbff00;
-      color: #003769;
-    }
+.navbar a:hover {
+  background-color: #fbff00;
+  color: #003769;
+}
 
-    @media screen and (max-width: 600px) {
-      .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+#logo {
+  height: auto;
+  width: 40px;
+  align-items: center;
+}
 
-      .navbar a {
-        width: 100%;
-        text-align: left;
-      }
-    }
-    #logo {
-        height: auto;
-        width: 40px;
-       align-items: center;
-    }
+.villany {
+  width: 100%;
+  height: 500px;
+}
     .sarga {
         font-size: 40px;
         color: #fbff00; 
@@ -84,6 +77,7 @@
     .fasz{
       transform: translate(1000px, -100px);
       position: absolute;
+        display: block;
 
     }
     .k{
@@ -264,6 +258,8 @@ color: #003769;
      position: relative; 
   top: 360px !important;
   left: 100px; 
+   display: block;
+
 }
 
 .bemaszo-kep {
@@ -376,8 +372,8 @@ text-decoration: underline;
 
 
 .site-footer {
-background-color: #00162e97;
-color:#fbff00 ;
+  background-color: #00162e97;
+  color: white;
 font-weight: bold;
 text-align: center;
 padding: 1px 0;
@@ -386,3 +382,208 @@ bottom: 0;
 width: 100%;
 font-size: 8px;
 }
+@media screen and (max-width: 600px) {
+ body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #010b44;
+      background-repeat: no-repeat;
+      background: radial-gradient(circle, #1e3ded, #010b44);
+      scroll-behavior: smooth;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+       background-image: url(../images/villanyszerelo.png);
+       background-size:1400px 1200px;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+      }
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+    position: relative;
+    z-index: 1100;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 200px;
+    height: 100%;
+    background-color: #010b44;
+    flex-direction: column;
+    padding-top: 60px;
+    transition: 0.3s ease;
+    z-index: 1000;
+  }
+
+  .nav-links a {
+    color: white;
+    padding: 15px 20px;
+    border-bottom: 1px solid #fff;
+    display: block;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+  .sarga {
+        font-size: 40px;
+        color: #fbff00; 
+        font-weight: 600;
+        padding-left: 120px;
+        transform: translate(-100px, 100px);
+         } 
+      .kék{
+      font-size: 25px;
+      color: white;
+      font-weight: 600;
+      padding-left: 130px;  
+      transform: translate(-100px, 100px);   
+        }
+        .fehér{
+      font-size: 20px;
+      color: white;
+      font-weight: 600;
+      padding-left: 130px;  
+      transform: translate(-100px, 100px);
+    } 
+        .fasz{
+      transform: translate(1000px, -100px);
+      position: absolute;
+        display: none;
+
+    }
+        .l{
+display: flex;
+transform: translate(110px, 100px);
+    }
+    .custom-hr {
+  background-color: #fbff00;
+  color: #ffffff;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;   
+  align-items: center; 
+  padding: 0 -10px;
+  gap: 10px;
+   margin-top: -260px;
+  margin-bottom: 100px;
+}
+.szoveg {
+font-weight: 900;
+font-size: 20px; 
+margin: 0;
+text-align: center;
+transform: translateX(0px);
+background: #fbff00;
+padding: 20px 0 ;
+color: #003769;
+
+
+}
+
+.csik-kep {
+  height: 40px;          
+  width: auto;
+  transform: translateX(-5px)
+}
+ .container5 {
+ margin-left: -15px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 50px;
+  padding: 100px;
+    margin-left: -90px;
+   margin-right: 200px;
+}
+.hatternemtudom {
+  width: 100%;
+  height: 1000px;
+}
+
+
+  .feherminden {
+    margin-top: -900px;
+    color: rgb(201, 33, 33);
+    font-size: 20px;
+}
+#jobbragec {
+    margin-left: -980px;
+  margin-bottom: 500px;
+}
+#jobbragec2 {
+    margin-left: -1480px;
+  margin-bottom: 600px;
+}
+.jk {
+ font-size: 20px;
+}
+.ful {
+   font-size: 12px;
+}
+.ful2 {
+   font-size: 16px;
+}
+.jobbra {
+  margin-left: 1000px;
+
+}
+.szex1 {
+  z-index: 101;
+  width: auto;
+  height: 320px;
+   border-radius: 15px;
+     position: relative; 
+  top: 360px !important;
+  left: 100px; 
+      display: none;
+}
+
+.bemaszo-kep {
+  opacity: 0;
+  transform: translateX(-800px);
+  transition: all 0.8s ease-out;
+}
+
+.bemaszo-kep.megjelent {
+  opacity: 1;
+  transform: translateX(-600px);
+}
+.lefle {
+  margin-bottom: 120px;
+}
+.villanyszereelesfsa {
+  margin-left: 500px;
+  margin-top: -350px;
+}
+.jk2 {
+font-size: 32px;
+}
+.szex2 {
+  z-index: 101;
+  width: auto;
+  height: 320px;
+   border-radius: 15px;
+     position: relative; 
+  top: 390px !important;
+  left: 650px; 
+
+      display: none;
+}
+.leasf {
+  margin-bottom: 200px;
+}
+}
+        
