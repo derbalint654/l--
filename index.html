@@ -10,20 +10,38 @@
 
 <body onload="scrollToSection()">
   
-
-
-  <div class="navbar">
-    <a href="#" ><img src="images/logo.jpg" id="logo"></a>
+ <div class="navbar">
+    <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+     <a href="#" ><img src="images/logo.jpg" id="logo"></a>
     <a href="#" class="logo">Villanyszerelés</a>
-    <a href="#">Villanyszerelés</a>
-    <a href="#szolgaltatasok">Szolgáltatások</a>
-    <a href="rolam.html">Rólam</a>
-    <a href="v.projektek.html">Projektek</a>
-    <a href="arak.html">Árak</a>
-    <a href="kapcsolat.html">Kapcsolat</a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Villanyszerelés</a>
+      <a href="index.html#szolgaltatasok">Szolgáltatások</a>
+      <a href="rolam.html">Rólam</a>
+      <a href="v.projektek.html">Projektek</a>
+       <a href="arak.html">Árak</a>
+        <a href="kapcsolat.html">Kapcsolat</a>
+    </div>
   </div>
+
+
+
+
+
+
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById("navLinks");
+    nav.classList.toggle("active");
+  }
+</script>
+
+
+
+
+
   <p class="sarga"  style="color: yellow; ">  Villanyszerelés:
-  elektromos <br>Hálózatok kiépitése és felujitása</p>
+  elektromos <br>álózatok kiépitése és felujitása</p>
   <p class="kék">Felújít vagy új házat épít, lakása van? </p>
   <img src="images/villanyszereles.png" alt="" class="fasz" >
 
@@ -101,23 +119,25 @@
 <div class="feherminden">
   <div class="jobbra"> 
     <img class="szex1 bemaszo-kep"  src="images/szex1.png">
-  
+  <div id="jobbragec"> 
 <p class="jk">Villanyszerelés Budapesten és Pest <br> megyében </p>
-<p>Házak és lakások, panellakások teljes villanyszerelésével, <br> kivitelezési munkák ellenőrzésével foglalkozom. Minőségi  <br>anyagokkal dolgozom, szakszerűen és megbízhatóan. <br></p>
+<p class="ful" >Házak és lakások, panellakások teljes villanyszerelésével, <br> kivitelezési munkák ellenőrzésével foglalkozom. Minőségi  <br>anyagokkal dolgozom, szakszerűen és megbízhatóan. <br></p>
 
-<p>Új vagy régi villanyhálózat felújításával illetve kiépítésével,  <br>szerelésével, hibaelhárításával. EPH kiépítését, tűzhelyek,  <br>bojlerek, kazánok, FI-relék, lakáselosztók, kismegszakítók, cirkók  <br>stb.szerelését vagy javítását is vállalom. <br></p>
+<p class="ful">Új vagy régi villanyhálózat felújításával illetve kiépítésével,  <br>szerelésével, hibaelhárításával. EPH kiépítését, tűzhelyek,  <br>bojlerek, kazánok, FI-relék, lakáselosztók, kismegszakítók, cirkók  <br>stb.szerelését vagy javítását is vállalom. <br></p>
 
 <p class="lefle">Megbízhatóság és minőség!</p>
 </div>
 <div class="villanyszereelesfsa"> 
   <img class="szex2"  src="images/szex2.png">
+    <div id="jobbragec2"> 
 <p class="jk2"> Ba-Villanyszerelés</p>
-<p> HOZZÁÉRTŐ, SZAKSZERŰ MUNKAERŐ</p>
+<p class="ful2"> HOZZÁÉRTŐ, SZAKSZERŰ MUNKAERŐ</p>
 
 <p> Rólam </p>
-<p> 20 éve foglalkozom villanyszereléssel. Megannyi projekten <br>vagyok már túl és mégtöbb elégedett ügyfél vette már át jól <br>elvégzett munkáimat. </p>
-<p>Számomra fontos, hogy munkám precíz, igényes, minőségi és<br>biztonságos legyen. Ennek érdekében mindent megteszek és<br> szakszerű hozzáálással végzem el munkáimat. </p>
-<p class="leasf"> A minőség nálam nem egyenlő a magas árral, megfizethető<br> áron vállalom el a munkákat, hogy te is elégedetten vedd át, <br>majd élvezhesd munkámat és én is jókedvvel hagyjam el<br> a munkaterületet. </p>
+<p class="ful"> 20 éve foglalkozom villanyszereléssel. Megannyi projekten <br>vagyok már túl és mégtöbb elégedett ügyfél vette már át jól <br>elvégzett munkáimat. </p>
+<p class="ful">Számomra fontos, hogy munkám precíz, igényes, minőségi és<br>biztonságos legyen. Ennek érdekében mindent megteszek és<br> szakszerű hozzáálással végzem el munkáimat. </p>
+<p class="leasf ful" > A minőség nálam nem egyenlő a magas árral, megfizethető<br> áron vállalom el a munkákat, hogy te is elégedetten vedd át, <br>majd élvezhesd munkámat és én is jókedvvel hagyjam el<br> a munkaterületet. </p>
+</div>
 </div>
 </div>
 <div style="text-align: center;">
