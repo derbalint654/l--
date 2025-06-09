@@ -536,8 +536,8 @@ color: #003769;
   margin-bottom: 500px;
 }
 #jobbragec2 {
-    margin-left: -1480px;
-  margin-bottom: 600px;
+    margin-left: -1480px !important;
+  margin-bottom: 600px !important;
 }
 .jk {
  font-size: 20px;
